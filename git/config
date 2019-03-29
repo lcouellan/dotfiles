@@ -1,0 +1,8 @@
+[user]
+	name = Lénaïc
+	email = lcouellan@gmail.com
+[core]
+	excludesfile = /home/lenaic/.gitignore
+        editor= vim
+[push]
+	default = simple

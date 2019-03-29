@@ -1,0 +1,4 @@
+#!/bin/sh
+
+ln -s -f /home/lenaic/dotfiles/git/ignore /home/lenaic/.gitignore
+ls -s -f /home/lenaic/dotfiles/git/config /home/lenaic/.gitconfig
