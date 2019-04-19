@@ -1,4 +1,9 @@
 install:
 	sh ./git/install
 	sh ./yay/install
-	sh ./chrome/install
+	sh ./system/install
+	sh ./nvim/install
+	sh ./docker/install
+	sh ./node/install
+	sh ./php/install
+	sh ./miscellaneous/install

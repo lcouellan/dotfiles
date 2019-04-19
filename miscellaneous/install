@@ -1,0 +1,5 @@
+#!/bin/bash
+
+yay -S --noconfirm google-chrome
+yay -S --noconfirm spotify
+yay -S --noconfirm postman-bin

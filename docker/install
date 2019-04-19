@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pacman -S --noconfirm docker docker-compose
+
+sudo usermod -a -G docker $USER

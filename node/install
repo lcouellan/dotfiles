@@ -1,0 +1,8 @@
+#!/bin/bash
+
+yay -S --noconfirm npm
+
+npm install -g yarn
+npm install -g clever-tools
+npm install -g eslint
+npm install -g eslint-plugin-react

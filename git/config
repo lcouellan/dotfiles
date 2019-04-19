@@ -2,7 +2,7 @@
 	name = Lénaïc
 	email = lcouellan@gmail.com
 [core]
-	excludesfile = /home/lenaic/.gitignore
-        editor= vim
+	excludesfile = $HOME/.gitignore
+    editor= nvim
 [push]
 	default = simple

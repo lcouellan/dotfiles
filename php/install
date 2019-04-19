@@ -1,0 +1,5 @@
+#!/bin/bash
+
+yay -S --noconfirm php
+
+sh ./composer/install
