@@ -1,4 +1,4 @@
 #!/bin/bash
 
-ln -s -f $HOME/dotfiles/git/ignore $HOME/.gitignore
-ls -s -f $HOME/dotfiles/git/config $HOME/.gitconfig
+ln -s -f $HOME/.dotfiles/git/ignore $HOME/.gitignore
+ln -s -f $HOME/.dotfiles/git/config $HOME/.gitconfig

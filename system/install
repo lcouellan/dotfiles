@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #Installing Zsh
-yay -S --no-confirm zsh
+yay -S --noconfirm zsh
 chsh -s $(which zsh)
-ls -s -f $HOME/dotfiles/system/.zshrc $HOME/.zshrc
+ln -s -f $HOME/.dotfiles/system/.zshrc $HOME/.zshrc
 
 # Other system commands
 yay -S --noconfirm bat

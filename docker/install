@@ -1,5 +1,7 @@
 #!/bin/bash
 
-pacman -S --noconfirm docker docker-compose
+yay -S --noconfirm docker docker-compose
 
-sudo usermod -a -G docker $USER
+sudo groupadd docker
+
+sudo gpasswd -a user docker $USER

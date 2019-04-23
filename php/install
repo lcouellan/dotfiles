@@ -2,4 +2,4 @@
 
 yay -S --noconfirm php
 
-sh ./composer/install
+sh .php/composer/install

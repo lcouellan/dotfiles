@@ -1,7 +1,9 @@
 #!/bin/bash
 
-git clone https://aur.archlinux.org/yay.git
+git clone https://aur.archlinux.org/yay.git yay-repo
 
-cd yay
+cd yay-repo
 
 makepkg -si
+
+rm yay-repo -rf
