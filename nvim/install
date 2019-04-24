@@ -1,3 +1,5 @@
 #!/bin/bash
 
 yay -S --noconfirm neovim
+
+ln -s $HOME/.dotfiles/nvim/init.vim $HOME/.config/nvim/init.vim

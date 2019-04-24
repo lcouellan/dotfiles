@@ -12,8 +12,8 @@ source ~/.zplug/init.zsh
 
 
 ## CONFIG
-export LANG=fr_FR.UTF-8
-export LC_ALL=fr_FR.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 export LSCOLORS=exgxcxdxcxexexabagacad
 
 
@@ -69,6 +69,9 @@ alias gcob='git checkout -b'
 alias gs='git status'
 alias gph='git push'
 alias gpl='git pull'
+
+# VIM
+alias vim='nvim'
 
 # Install packages
 if ! zplug check --verbose; then
