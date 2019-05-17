@@ -7,3 +7,7 @@ ln -s -f $HOME/.dotfiles/system/.zshrc $HOME/.zshrc
 
 # Other system commands
 yay -S --noconfirm bat
+
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+
+sh ~/.fzf/install
