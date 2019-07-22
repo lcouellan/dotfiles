@@ -34,6 +34,9 @@ export EDITOR='nvim'
 alias ll='ls -alFh'
 alias la='ls -A'
 
+#AWS
+alias aws-login='$(aws ecr get-login --no-include-email)'
+
 # TAR
 compress () { tar cfvz $1.tgz $1 }
 extract () { tar xfvz $1 }
@@ -41,8 +44,10 @@ extract () { tar xfvz $1 }
 # Navigation
 alias home='cd ~'
 alias knp='cd ~/Documents/Knp'
+alias dotfiles='cd ~/.dotfiles'
 alias perso='cd ~/Documents/Perso'
 alias deliver='cd ~/Documents/Knp/Deliver'
+alias yousign='cd ~/Documents/Knp/yousign'
 
 # Docker
 alias d-kill='docker stop $(docker ps -aq) && docker rm $(docker ps -aq)'
@@ -62,7 +67,7 @@ alias d-volume-d='docker volume ls -qf dangling=true'
 alias ga='git add'
 alias gaa='git add -A'
 alias gb='git branch'
-alias gcm='git commit -am'
+alias gcm='git commit -m'
 alias gco='git checkout'
 alias gcob='git checkout -b'
 alias gs='git status'

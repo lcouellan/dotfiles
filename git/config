@@ -1,8 +1,8 @@
 [user]
-	name = Lénaïc
+	name = Lenaic
 	email = lcouellan@gmail.com
 [core]
 	excludesfile = $HOME/.gitignore
-    editor= nvim
+    	editor= nvim
 [push]
 	default = simple
