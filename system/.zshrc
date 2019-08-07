@@ -37,6 +37,11 @@ alias la='ls -A'
 #AWS
 alias aws-login='$(aws ecr get-login --no-include-email)'
 
+#Bindkeys
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+bindkey "^[[3~" delete-char
+
 # TAR
 compress () { tar cfvz $1.tgz $1 }
 extract () { tar xfvz $1 }
