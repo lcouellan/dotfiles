@@ -4,3 +4,7 @@ yay -S --noconfirm google-chrome
 yay -S --noconfirm spotify
 yay -S --noconfirm insomnia
 yay -S --noconfirm flameshot
+yay -S --noconfirm visual-studio-code-bin
+yay -S --noconfirm albert
+sudo pip install --upgrade pip
+sudo pip install --upgrade awscli
