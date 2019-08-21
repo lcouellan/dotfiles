@@ -6,5 +6,7 @@ yay -S --noconfirm insomnia
 yay -S --noconfirm flameshot
 yay -S --noconfirm visual-studio-code-bin
 yay -S --noconfirm albert
+yay -S --noconfirm python-pip
 sudo pip install --upgrade pip
 sudo pip install --upgrade awscli
+yay -S --noconfirm slack-desktop

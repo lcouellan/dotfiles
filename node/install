@@ -2,7 +2,7 @@
 
 yay -S --noconfirm npm
 
-npm install -g yarn
-npm install -g clever-tools
-npm install -g eslint
-npm install -g eslint-plugin-react
+sudo npm install -g yarn
+sudo npm install -g clever-tools
+sudo npm install -g eslint
+sudo npm install -g eslint-plugin-react

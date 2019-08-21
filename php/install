@@ -2,4 +2,4 @@
 
 yay -S --noconfirm php
 
-sh ./composer/install
+sudo sh $HOME/.dotfiles/php/composer/install
