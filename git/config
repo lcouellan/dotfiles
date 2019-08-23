@@ -6,3 +6,7 @@
     	editor= nvim
 [push]
 	default = simple
+[tag]
+	sort = version:refname
+[branch]
+	sort = -committerdate
