@@ -2,8 +2,9 @@
 	name = Lenaic
 	email = lcouellan@gmail.com
 [core]
-	excludesfile = $HOME/.gitignore
+	excludesfile = ~/.gitignore
     	editor= nvim
+	excludesfiles = /home/lenaic/.gitignore
 [push]
 	default = simple
 [tag]
