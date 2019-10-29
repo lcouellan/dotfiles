@@ -54,6 +54,10 @@ alias perso='cd ~/Documents/Perso'
 alias deliver='cd ~/Documents/Knp/Deliver'
 alias yousign='cd ~/Documents/Knp/yousign'
 
+# Display
+alias screenOff='xrandr --output eDP1 --off'
+alias screenOn='xrandr --output eDP1 --auto && xrandr --output eDP1 --left-of DP1'
+
 # Docker
 alias d-kill='docker stop $(docker ps -aq) && docker rm $(docker ps -aq)'
 alias d-clean='docker volume rm $(docker volume ls -qf dangling=true)'
