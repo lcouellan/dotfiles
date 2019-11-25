@@ -5,9 +5,13 @@
 	excludesfile = ~/.gitignore
     	editor= nvim
 	excludesfiles = /home/lenaic/.gitignore
+[pull]
+	default = current
 [push]
-	default = simple
+	default = current
 [tag]
 	sort = version:refname
 [branch]
 	sort = -committerdate
+[mergetool]
+	keepBackup = false

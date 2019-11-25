@@ -31,8 +31,8 @@ export EDITOR='nvim'
 
 ## ALIASES
 # Override lses
-alias ll='ls -alFh'
-alias la='ls -A'
+alias ll='exa -alFh'
+alias la='exa -A'
 
 #AWS
 alias aws-login='$(aws ecr get-login --no-include-email)'

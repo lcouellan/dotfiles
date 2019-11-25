@@ -6,6 +6,7 @@ chsh -s $(which zsh)
 ln -s -f $HOME/.dotfiles/system/.zshrc $HOME/.zshrc
 
 # Other system commands
+yay -S --noconfirm exa
 yay -S --noconfirm bat
 yay -S --noconfirm gotop
 
