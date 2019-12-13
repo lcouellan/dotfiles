@@ -31,6 +31,7 @@ export EDITOR='nvim'
 
 ## ALIASES
 # Override lses
+alias ls='exa'
 alias ll='exa -alFh'
 alias la='exa -A'
 
@@ -51,7 +52,7 @@ alias home='cd ~'
 alias knp='cd ~/Documents/Knp'
 alias dotfiles='cd ~/.dotfiles'
 alias perso='cd ~/Documents/Perso'
-alias deliver='cd ~/Documents/Knp/Deliver'
+alias deliver='cd ~/Documents/Knp/Deliver/deliver-events'
 alias yousign='cd ~/Documents/Knp/yousign'
 
 # Display

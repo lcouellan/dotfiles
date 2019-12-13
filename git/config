@@ -5,8 +5,6 @@
 	excludesfile = ~/.gitignore
     	editor= nvim
 	excludesfiles = /home/lenaic/.gitignore
-[pull]
-	default = current
 [push]
 	default = current
 [tag]
