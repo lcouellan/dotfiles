@@ -100,6 +100,7 @@ zplug load
 fpath=(~/.zsh/completion $fpath)
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH=$PATH:$HOME/.local/bin/
 
 ## History wrapper
 function omz_history {
@@ -145,3 +146,5 @@ setopt share_history          # share command history data
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 neofetch
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
