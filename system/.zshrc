@@ -53,7 +53,8 @@ alias knp='cd ~/Documents/Knp'
 alias dotfiles='cd ~/.dotfiles'
 alias perso='cd ~/Documents/Perso'
 alias deliver='cd ~/Documents/Knp/Deliver/deliver-events'
-alias yousign='cd ~/Documents/Knp/yousign'
+alias yousign='cd ~/Documents/Knp/Yousign'
+alias basik='cd ~/Documents/Knp/Basik'
 
 # Display
 alias screenOff='xrandr --output eDP1 --off'
