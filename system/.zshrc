@@ -84,6 +84,10 @@ alias gs='git status'
 alias gph='git push'
 alias gpl='git pull'
 
+# Basik
+alias vpn_cacom="echo S+3gdGsE | sudo openconnect --user=knplabs --passwd-on-stdin connect.cacom.fr"
+alias vpn_cacom2="echo S+3gdGsE | sudo openconnect --user=knplabs --passwd-on-stdin connect1.cacom.fr"
+
 # VIM
 alias vim='nvim'
 
