@@ -50,6 +50,7 @@ extract () { tar xfvz $1 }
 # Navigation
 alias home='cd ~'
 alias knp='cd ~/Documents/Knp'
+alias formation='cd ~/Documents/Knp/Formation'
 alias dotfiles='cd ~/.dotfiles'
 alias perso='cd ~/Documents/Perso'
 alias deliver='cd ~/Documents/Knp/Deliver/deliver-events'
