@@ -56,6 +56,7 @@ alias perso='cd ~/Documents/Perso'
 alias deliver='cd ~/Documents/Knp/Deliver/deliver-events'
 alias yousign='cd ~/Documents/Knp/Yousign'
 alias basik='cd ~/Documents/Knp/Basik'
+alias i24='cd ~/Documents/Knp/i24news'
 
 # Display
 alias screenOff='xrandr --output eDP1 --off'
