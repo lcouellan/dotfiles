@@ -32,4 +32,4 @@ Many thanks to :
 - [dotfiles community](https://dotfiles.github.io)
 - [webpro](https://github.com/webpro)
 - [AntoineLelaisant](https://github.com/AntoineLelaisant)
-- [MeisterTea](https://github.com/MeisterTea)
+- [bamboozila](https://github.com/bamboozila)
