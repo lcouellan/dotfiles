@@ -8,8 +8,7 @@ ln -s -f $HOME/.dotfiles/system/.zshrc $HOME/.zshrc
 # Other system commands
 yay -S --noconfirm exa
 yay -S --noconfirm bat
-yay -S --noconfirm gotop
-yay -S --noconfirm ctop
+yay -S --noconfirm htop
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 

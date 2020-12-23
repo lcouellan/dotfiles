@@ -3,6 +3,5 @@
 yay -S --noconfirm npm
 
 sudo npm install -g yarn
-sudo npm install -g clever-tools
 sudo npm install -g eslint
 sudo npm install -g eslint-plugin-react

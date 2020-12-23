@@ -6,5 +6,4 @@ install:
 	sh ./docker/install
 	sh ./node/install
 	sh ./php/install
-	sh ./tmux/install
 	sh ./miscellaneous/install
