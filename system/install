@@ -3,7 +3,7 @@
 #Installing Zsh
 yay -S --noconfirm zsh
 chsh -s $(which zsh)
-ln -s -f $HOME/.dotfiles/system/.zshrc $HOME/.zshrc
+ln -s -f $PWD/system/.zshrc $HOME/.zshrc
 
 # Other system commands
 yay -S --noconfirm exa
