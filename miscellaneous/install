@@ -9,3 +9,6 @@ yay -S --noconfirm python-pip
 sudo pip install --upgrade pip
 sudo pip install --upgrade awscli
 yay -S --noconfirm slack-desktop
+yay -S --noconfirm variety
+
+ln -s -f $PWD/miscellaneous/variety.conf $HOME/.config/variety/variety.conf
