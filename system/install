@@ -9,6 +9,7 @@ ln -s -f $PWD/system/.zshrc $HOME/.zshrc
 yay -S --noconfirm exa
 yay -S --noconfirm bat
 yay -S --noconfirm htop
+yay -S --noconfirm ctop
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
