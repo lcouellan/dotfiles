@@ -54,8 +54,6 @@ alias formation='cd ~/Documents/Knp/Formation'
 alias dotfiles='cd ~/.dotfiles'
 alias perso='cd ~/Documents/Perso'
 alias deliver='cd ~/Documents/Knp/Deliver/deliver-events'
-alias yousign='cd ~/Documents/Knp/Yousign'
-alias basik='cd ~/Documents/Knp/Basik'
 alias i24='cd ~/Documents/Knp/i24news'
 
 # Display
@@ -78,10 +76,8 @@ alias d-volume-d='docker volume ls -qf dangling=true'
 # Git
 alias ga='git add'
 alias gaa='git add -A'
-alias gb='git branch'
 alias gcm='git commit -m'
 alias gco='git checkout'
-alias gcob='git checkout -b'
 alias gs='git status'
 alias gph='git push'
 alias gpl='git pull'
@@ -148,6 +144,5 @@ setopt share_history          # share command history data
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-neofetch
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"

@@ -31,7 +31,3 @@ Thumbs.db
 ##########################
 /.idea
 /.vscode
-
-# Basik #
-#########
-docker-compose.vpn.yml
