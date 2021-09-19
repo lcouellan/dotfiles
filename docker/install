@@ -1,6 +1,12 @@
 #!/bin/bash
 
-curl -o- https://get.docker.com/ | bash
+sudo apt-get install docker docker-compose
+
+sudo groupadd docker
+
+sudo usermod -aG docker $USER
+
+sudo systemctl enable docker
 
 export DOCKER_BUILDKIT=1
 

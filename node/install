@@ -1,6 +1,10 @@
 #!/bin/bash
 
-$INSTALL install npm
+if [ "$DISTRIB" == "ManjaroLinux" ]; then
+    $INSTALL npm
+else
+    $INSTALL nodejs npm
+fi
 
 sudo npm install -g yarn
 sudo npm install -g eslint

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Theme
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
 #Installing Zsh
 $INSTALL zsh
 chsh -s $(which zsh)
@@ -13,6 +16,8 @@ ln -s -f $PWD/system/kitty.conf $HOME/.config/kitty/kitty.conf
 ##Installing Tmux
 $INSTALL tmux
 ln -s -f $PWD/system/tmux.conf $HOME/.tmux.conf
+mkdir -p $HOME/.config/tmux/powerline
+ln -s -f $PWD/system/gray.tmuxtheme $HOME/.config/tmux/powerline/gray.tmuxtheme
 
 # Other system commands
 $INSTALL curl

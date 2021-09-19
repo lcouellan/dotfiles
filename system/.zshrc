@@ -10,10 +10,10 @@ if [ ! -d ~/.zplug ]; then
 fi
 source ~/.zplug/init.zsh
 
-
 ## CONFIG
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+export TERM="xterm-256color"
 
 ## PLUGINS
 zplug 'zsh-users/zsh-syntax-highlighting'
@@ -22,9 +22,32 @@ zplug 'zsh-users/zsh-autosuggestions'
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
 # THEME
-DEFAULT_USER=lenaic
-DEFAULT_MACHINE='XPS13'
-zplug 'lcouellan/0e4a409e653efba2d9bb0d9d5485d024', from:gist, use:lcouellan.zsh-theme, as:theme
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_STATUS_CROSS=true
+
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=4
+
+POWERLEVEL9K_TIME_BACKGROUND="yellow"
+POWERLEVEL9K_TIME_FOREGROUND="black"
+POWERLEVEL9K_TIME_FORMAT="%B%D{%H:%M:%S}"
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir dir_writable vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+
+POWERLEVEL9K_OS_ICON_FOREGROUND="108"
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='yellow'
+POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='yellow'
+
+if [ "$TERM" != 'linux' ]; then
+  source $HOME/.oh-my-zsh/custom/themes/powerlevel9k/powerlevel9k.zsh-theme
+else
+  export PS1="%{%F{yellow}%}%n%{%f%} %~ › "
+fi
+
+## GLOBAL VARs
+export EDITOR='nvim'
 
 ## GLOBAL VARs
 export EDITOR='nvim'

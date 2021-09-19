@@ -10,6 +10,6 @@ mkdir -p ~/.local/share/fonts
 
 cd ~/.local/share/fonts
 
-wget -i ~/dotfiles/fonts/fonts-packages.txt && fc-cache
+wget -i ~/.dotfiles/fonts/fonts-package.txt && fc-cache
 
 rm -rf nerd-fonts
