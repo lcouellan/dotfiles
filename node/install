@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -S --noconfirm npm
+$INSTALL install npm
 
 sudo npm install -g yarn
 sudo npm install -g eslint

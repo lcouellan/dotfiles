@@ -1,9 +1,7 @@
 install:
-	sh ./git/install
-	sh ./yay/install
-	sh ./system/install
-	sh ./nvim/install
-	sh ./docker/install
-	sh ./node/install
-	sh ./php/install
-	sh ./miscellaneous/install
+	sh install.sh
+
+update-ubuntu:
+	sudo apt-get update
+	sudo apt-get upgrade
+	sudo apt autoremove

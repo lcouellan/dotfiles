@@ -1,5 +1,10 @@
 #!/bin/bash
 
-yay -S --noconfirm php
+$INSTALL php
+$INSTALL php-zip
+$INSTALL php-xml
+$INSTALL php-mysql
+
+sudo ln -sf $PWD/php/php.ini /etc/php/php.ini
 
 sudo sh php/composer/install

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -S --noconfirm neovim
+$INSTALL neovim
 
 mkdir -p $HOME/.config/nvim
 

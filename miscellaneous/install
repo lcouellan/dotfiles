@@ -1,14 +1,21 @@
 #!/bin/bash
 
-yay -S --noconfirm google-chrome
-yay -S --noconfirm spotify
-yay -S --noconfirm insomnia
-yay -S --noconfirm flameshot
-yay -S --noconfirm visual-studio-code-bin
-yay -S --noconfirm python-pip
+$INSTALL google-chrome
+$INSTALL spotify
+$INSTALL flameshot
+$INSTALL python-pip
+$INSTALL variety
 sudo pip install --upgrade pip
 sudo pip install --upgrade awscli
-yay -S --noconfirm slack-desktop
-yay -S --noconfirm variety
 
 ln -s -f $PWD/miscellaneous/variety.conf $HOME/.config/variety/variety.conf
+
+if [ "$DISTRIB" == "ManjaroLinux" ]; then
+    yay -S --noconfirm slack-desktop
+    yay -S --noconfirm insomnia
+    yay -S --noconfirm visual-studio-code-bin
+else
+    $INSTALL slack
+    sudo snap install insomnia
+    sudo snap install --classic code
+fi

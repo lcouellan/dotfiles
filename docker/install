@@ -1,9 +1,11 @@
 #!/bin/bash
 
-yay -S --noconfirm docker docker-compose
+curl -o- https://get.docker.com/ | bash
 
-sudo groupadd docker
+export DOCKER_BUILDKIT=1
 
-sudo usermod -aG docker $USER
+docker build --platform=local -o . git://github.com/docker/buildx
 
-sudo systemctl enable docker
+mkdir -p ~/.docker/cli-plugins
+
+mv buildx ~/.docker/cli-plugins/docker-buildx

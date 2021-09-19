@@ -1,0 +1,15 @@
+#!/bin/bash
+
+git clone https://github.com/ryanoasis/nerd-fonts
+
+cd nerd-fonts
+
+sudo ./install.sh
+
+mkdir -p ~/.local/share/fonts
+
+cd ~/.local/share/fonts
+
+wget -i ~/dotfiles/fonts/fonts-packages.txt && fc-cache
+
+rm -rf nerd-fonts

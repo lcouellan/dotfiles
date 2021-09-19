@@ -1,25 +1,37 @@
 #!/bin/bash
 
 #Installing Zsh
-yay -S --noconfirm zsh
+$INSTALL zsh
 chsh -s $(which zsh)
 ln -s -f $PWD/system/.zshrc $HOME/.zshrc
 
 ##Installing Kitty
-yay -S --noconfirm kitty
+$INSTALL kitty
 mkdir $HOME/.config/kitty
 ln -s -f $PWD/system/kitty.conf $HOME/.config/kitty/kitty.conf
 
 ##Installing Tmux
-yay -S --noconfirm tmux
+$INSTALL tmux
 ln -s -f $PWD/system/tmux.conf $HOME/.tmux.conf
 
 # Other system commands
-yay -S --noconfirm exa
-yay -S --noconfirm bat
-yay -S --noconfirm htop
-yay -S --noconfirm ctop
+$INSTALL curl
+$INSTALL bat
+$INSTALL htop
+$INSTALL ctop
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 sh ~/.fzf/install
+
+## Install Exa and aria2c
+if [ "$DISTRIB" == "ManjaroLinux" ]; then
+    yay -S --noconfirm aria2c
+    yay -S --noconfirm exa
+else
+    curl https://sh.rustup.rs -sSf | sh
+    wget -c https://github.com/ogham/exa/releases/download/v0.8.0/exa-linux-x86_64-0.8.0.zip
+    unzip exa-linux-x86_64-0.8.0.zip
+    sudo mv exa-linux-x86_64 /usr/local/bin/exa
+    snap install aria2c
+fi
