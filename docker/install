@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install docker docker-compose
+$INSTALL docker docker-compose
 
 sudo groupadd docker
 

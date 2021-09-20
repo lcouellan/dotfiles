@@ -49,9 +49,6 @@ fi
 ## GLOBAL VARs
 export EDITOR='nvim'
 
-## GLOBAL VARs
-export EDITOR='nvim'
-
 ## ALIASES
 # Override lses
 alias ls='exa'
