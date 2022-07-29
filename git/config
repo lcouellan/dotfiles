@@ -1,6 +1,7 @@
 [user]
 	name = Lenaic
 	email = lcouellan@gmail.com
+	signingkey = F0E02F85DCA601CA03536CCAC0E3AF5C8A8CC421
 [core]
 	excludesfile = ~/.gitignore
     	editor= nvim
@@ -16,3 +17,7 @@
 	sort = -committerdate
 [mergetool]
 	keepBackup = false
+[commit]
+    gpgsign = true
+[gpg]
+    program = gpg
