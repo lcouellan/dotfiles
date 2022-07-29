@@ -83,15 +83,7 @@ alias screenOn='xrandr --output eDP1 --auto && xrandr --output eDP1 --left-of DP
 # Docker
 alias d-kill='docker stop $(docker ps -aq) && docker rm $(docker ps -aq)'
 alias d-clean='docker volume rm $(docker volume ls -qf dangling=true)'
-alias d-up='docker-compose up -d'
-alias d-stop='docker-compose stop'
-alias d-build='docker-compose build'
-alias d-ps='docker-compose ps'
-alias d-pull='docker-compose pull'
-alias d-logs='docker-compose logs'
-alias d-prune='docker system prune'
-alias d-volume='docker volume ls'
-alias d-volume-d='docker volume ls -qf dangling=true'
+alias dc='docker-compose'
 
 # Git
 alias ga='git add'
