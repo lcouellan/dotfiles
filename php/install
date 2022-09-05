@@ -1,9 +1,10 @@
 #!/bin/bash
 
-$INSTALL php
-$INSTALL php-zip
-$INSTALL php-xml
-$INSTALL php-mysql
+$INSTALL php81
+$INSTALL php81-zip
+$INSTALL php81-xml
+$INSTALL php81-mysql
+$INSTALL php81-mbstring
 
 sudo ln -sf $PWD/php/php.ini /etc/php/php.ini
 
