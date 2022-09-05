@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$INSTALL docker docker-compose
+curl https://get.docker.com | sh
 
 sudo groupadd docker
 
