@@ -1,14 +1,12 @@
 [user]
 	name = Lenaic
 	email = lcouellan@gmail.com
-	signingkey = F0E02F85DCA601CA03536CCAC0E3AF5C8A8CC421
 [core]
 	excludesfile = ~/.gitignore
-    	editor= nvim
+    editor= nvim
 	excludesfiles = /home/lenaic/.gitignore
 [pull]
 	default = current
-	ff = only
 [push]
 	default = current
 [tag]

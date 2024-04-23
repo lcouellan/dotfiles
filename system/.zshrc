@@ -70,10 +70,8 @@ extract () { tar xfvz $1 }
 # Navigation
 alias home='cd ~'
 alias knp='cd ~/Documents/Knp'
-alias formation='cd ~/Documents/Knp/Formation'
 alias dotfiles='cd ~/.dotfiles'
 alias perso='cd ~/Documents/Perso'
-alias deliver='cd ~/Documents/Knp/Deliver/deliver-events'
 alias i24='cd ~/Documents/Knp/i24news'
 
 # Display
@@ -158,3 +156,12 @@ setopt share_history          # share command history data
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+
+## React Native
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export PATH=$PATH:$ANDROID_SDK_ROOT/build-tools
+export PATH=$PATH:$ANDROID_SDK_ROOT/platforms
+export PATH=$PATH:/opt/gradle/gradle-7.5.1/bin

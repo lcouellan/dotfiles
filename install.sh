@@ -30,7 +30,7 @@ fi
 	sh ./system/install
 	sh ./nvim/install
 	sh ./docker/install
-	sh ./node/install
+	# sh ./node/install
 	sh ./php/install
 	sh ./mkcert/install
 	sh ./fonts/install

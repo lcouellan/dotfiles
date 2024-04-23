@@ -1,22 +1,13 @@
 #!/bin/bash
 
-$INSTALL google-chrome
-$INSTALL flameshot
 $INSTALL variety
 
 ln -s -f $PWD/miscellaneous/variety.conf $HOME/.config/variety/variety.conf
 
 if [ "$DISTRIB" == "ManjaroLinux" ]; then
-    yay -S --noconfirm python-pip
     yay -S --noconfirm slack-desktop
     yay -S --noconfirm insomnia
     yay -S --noconfirm visual-studio-code-bin
 else
-    $INSTALL python3-pip
-    $INSTALL slack
     sudo snap install insomnia
-    sudo snap install --classic code
 fi
-
-sudo pip install --upgrade pip
-sudo pip install --upgrade awscli

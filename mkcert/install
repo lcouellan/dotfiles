@@ -2,9 +2,9 @@
 
 $INSTALL libnss3-tools
 
-wget https://github.com/FiloSottile/mkcert/releases/download/v1.4.3/mkcert-v1.4.3-linux-amd64
+wget https://github.com/FiloSottile/mkcert/releases/download/v1.4.4/mkcert-v1.4.3-linux-amd64
 
-sudo cp mkcert-v1.4.3-linux-amd64 /usr/local/bin/mkcert
+sudo cp mkcert-v1.4.4-linux-amd64 /usr/local/bin/mkcert
 
 sudo chmod +x /usr/local/bin/mkcert
 

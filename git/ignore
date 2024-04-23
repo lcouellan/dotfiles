@@ -31,3 +31,7 @@ Thumbs.db
 ##########################
 /.idea
 /.vscode
+
+# Python env #
+##############
+/.venv

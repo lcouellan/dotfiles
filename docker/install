@@ -1,17 +1,17 @@
 #!/bin/bash
 
-$INSTALL docker docker-compose
+# $INSTALL docker docker-compose
 
 sudo groupadd docker
 
 sudo usermod -aG docker $USER
 
-sudo systemctl enable docker
+# sudo systemctl enable docker
 
-export DOCKER_BUILDKIT=1
+# export DOCKER_BUILDKIT=1
 
-docker build --platform=local -o . git://github.com/docker/buildx
+# docker build --platform=local -o . git://github.com/docker/buildx
 
-mkdir -p ~/.docker/cli-plugins
+# mkdir -p ~/.docker/cli-plugins
 
-mv buildx ~/.docker/cli-plugins/docker-buildx
+# mv buildx ~/.docker/cli-plugins/docker-buildx
