@@ -50,10 +50,6 @@ fi
 export EDITOR='nvim'
 
 ## ALIASES
-# Override lses
-alias ls='exa'
-alias ll='exa -alFh'
-alias la='exa -A'
 
 #AWS
 alias aws-login='$(aws ecr get-login --no-include-email)'
@@ -73,6 +69,7 @@ alias knp='cd ~/Documents/Knp'
 alias dotfiles='cd ~/.dotfiles'
 alias perso='cd ~/Documents/Perso'
 alias i24='cd ~/Documents/Knp/i24news'
+alias deliver='cd ~/Documents/Knp/deliver'
 
 # Display
 alias screenOff='xrandr --output eDP1 --off'
@@ -165,3 +162,4 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH=$PATH:$ANDROID_SDK_ROOT/build-tools
 export PATH=$PATH:$ANDROID_SDK_ROOT/platforms
 export PATH=$PATH:/opt/gradle/gradle-7.5.1/bin
+export PATH=$PATH:/opt/homebrew/bin

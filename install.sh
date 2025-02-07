@@ -22,6 +22,9 @@ if [ "$DISTRIB" == "ManjaroLinux" ]; then
     export REPO="manjaro"
 	export INSTALL="yay -S --noconfirm"
 	sh ./yay/install
+elif [ "$DISTRIB" == "Darwin" ]; then
+	export REPO="macos"
+	export INSTALL="brew install"
 else
     export REPO="ubuntu"
 	export INSTALL="sudo apt-get --yes install"
